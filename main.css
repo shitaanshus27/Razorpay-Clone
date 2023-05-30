@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media (max-width: 1300px) {
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4.5rem;
+  }
+  .nav-logo {
+    height: 1.38rem;
+    width: 6.94rem;
+  }
+  .features-img {
+    display: none;
+  }
+  .btn-cur {
+    margin-top: 2rem;
+    flex-wrap: wrap-reverse;
+  }
+  .btn {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+.box:hover > .svg {
+  display: block;
+  transition: all 0.2 ease;
+}
+@media (max-width: 500px) {
+  .payment {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  ul > li > a {
+    display: none;
+  }
+}
